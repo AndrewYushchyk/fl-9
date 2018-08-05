@@ -1,0 +1,125 @@
+@media screen{
+	.tm-sidebar, .tm-content-box{
+		box-shadow: 0 0 10px rgba(0,0,0,0.5);
+	}
+	section::before{ content: "";
+					 width: 0;
+					 height: 0;
+					 border-style: solid;
+					 border-width: 25px 120px 0 0;
+					 border-color: rgb(49,176,213) transparent;
+			}
+	.flex-item p:first-letter{
+		color:rgb(49,176,213);
+		font-size: 200%; 
+	}
+	.flex-item :nth-child(2){
+		font-style: italic;
+	}
+	.flex-item > p{
+		text-indent: 1.5em;
+		line-height: 2;
+	}
+	.carousel-item h2{
+		color: #dcdcdc;
+		letter-spacing: 5px;
+	}
+	.pad>ol>li>a:hover{
+		text-decoration: none;
+		border-bottom: 3px double;
+		color: rgb(49,176,213);
+
+	}
+	.pad>ol>li>a:visited{
+		color: silver;
+
+	}
+	.pad>ol>li:first-child::after, .pad>ol>li:nth-child(3)::after{
+		content:"New";
+		color: red;
+		font-size: 45%;
+		position: absolute;
+
+	}
+
+	.blocks>.tm-content-box{
+		zoom:1;
+	}
+
+	.blocks>.tm-content-box>ul>li p{
+		font-style: italic;
+		font-size: 140%;
+	}
+	.blocks>.tm-content-box>ul>li p:first-letter{
+		color: black;
+	}
+	.blocks>.tm-content-box>ul>li:nth-child(odd){
+		background-color: rgb(242,242,242);
+		
+	}
+
+	#about h2{
+		font-style:normal;
+	}
+	#about img{
+		border-radius: 50%;
+
+	}
+	#about ul li:nth-child(odd):hover{
+		background-color: rgb(49,176,213);
+
+	}
+	#about ul li h2:nth-child(odd):hover{
+		color: #fff;
+		font-weight: bold;
+		font-style:normal;
+		font-size: 300%;
+
+	}
+	p:first-letter{
+		color: #76cdd7;
+		font-size: 30px;
+	}
+	.tm-main-nav>ul>li{
+		border-bottom: 1px dotted silver;
+	}
+	.tm-main-nav>ul>li:last-child{
+		border-bottom: none;
+	}
+
+	.form-control, #contact .submit-btn{
+		color: red;
+	}
+
+	form .mandatory-field:after{
+		content:"*"; 
+		color: red;
+		position: absolute; 
+		margin: 0px 0px 0px 20px; 
+		padding: 0 0 0 0;
+		font-size: large;
+	}
+
+	#contact .submit-btn:hover{
+		color: #fff;
+		background-color: rgb(49,176,213);
+		border-color: rgb(49,176,213);
+	}
+}
+@media print{
+	.tm-sidebar, #about, .heading, .blocks, #ideas, #ideas+.tm-content-box{
+		display: none;
+	}
+	
+	#home{
+		width: 100%;
+		
+	}
+	h2.tm-section-title{
+		color: blue;
+	}
+	section::before{
+		content: none;
+	}
+
+}
